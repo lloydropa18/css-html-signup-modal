@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
+
+* {
+    font-family: "Readex Pro", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/pexels-screenpost-5948342.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+p {
+    font-size: 14px;
+}
+
+.auth-modal {
+    background-color: white;
+    width: 360px;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: rgb(0,0,0, 0.05) 0 6px 24px 0, rgba(0,0,0, 0.08) 0 0 0 1px;
+}
+
+.auth-modal form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-modal input {
+    padding: 8px;
+    margin: 8px;
+    font-size: 17px;
+}
+
+.auth-modal .form-button{
+    color: rgb(255,255,255);
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 12px 30px;
+    border-radius: 30px;
+    margin: 6px;
+    border: white 1px solid;
+    background: linear-gradient(45deg, rgb(185,48,254), rgb(255, 64, 153));
+    transition-duration: .5s;
+}
+
+.auth-modal .form-button:hover {
+    color:  rgb(185,48,254);
+    border: 1px solid rgb(185,48,254);
+    background:  rgb(255,255,255);
+    cursor: pointer;
+}
+
+.auth-modal .link-container {
+    display: flex;
+}
+
+.auth-modal .link-container img {
+    width: 170px;
+    margin: 5px;
+}
+
+.close-icon {
+    float: right;
+}
+
+input[type=text], input[type=password] {
+    border: none; 
+    outline: 1px solid rgb(153,149,149);
+    border-radius: 4px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    border: none; 
+    outline: 1px solid rgb(255,64,153);
+}
